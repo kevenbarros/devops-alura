@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  # Serviço do Backend (Ex: API Node.js)
+  app:
+    build: .
+    container_name: devops-alura
+    ports:
+      - "8000:8000" # Expõe a porta 8000 para o host
+    volumes:
+      - .:/app
